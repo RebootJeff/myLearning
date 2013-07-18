@@ -5,40 +5,43 @@
 		<title>Google</title>
 	</head>
 	<body>
+
 		<div id="header">
 			<ul>
-				<li>+You</li>
-				<li><font color="white">Search</font></li>
-				<li>Images</li>
-				<li>Maps</li>
-				<li>Play</li>
-				<li>YouTube</li>
-				<li>News</li>
-				<li>Gmail</li>
-				<li>Drive</li>
-				<li>Calendar</li>
-				<li>More ...</li>
+			<!-- Note: all links lead no where -->
+				<li><a href="#">+You</a></a></li>
+				<li><a href="#"><font color="white">Search</font></a></li>
+				<li><a href="#">Images</a></li>
+				<li><a href="#">Maps</a></li>
+				<li><a href="#">Play</a></li>
+				<li><a href="#">YouTube</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Gmail</a></li>
+				<li><a href="#">Drive</a></li>
+				<li><a href="#">Calendar</a></li>
+				<li><a href="#">More ...</a></li>
 			</ul>
 		</div>
 		<div id="signin_button">
+		<!-- Button is in a div to fine-tune its placement (is there a better way?) -->
 			<button>SIGN IN</button>
 		</div>
-		<center>
+		<div id="center_piece">
+		<!-- "center_piece" div centers its children, but <center></center> would work too -->
 			<img src="logo.png" width="275" height="95" id="logo">
-			<div class="center_piece" id="search_box"><input type="text"></div>
-			<div class="center_piece">
-				<button class="search_button">Google Search</button>
-				<button class="search_button">I'm Feeling Lucky</button>
-			</div>
-		</center>
+			<input type="text" id="search_box">
+			<button class="search_button">Google Search</button>
+			<button class="search_button">I'm Feeling Lucky</button>
+		</div>
 		<div id="footer">
 			<ul>
-				<li>Advertising Programs</li>
-				<li>Business Solutions</li>
-				<li>Privacy &amp; Terms</li>
-				<li>+Google</li>
-				<li>About Google</li>
+				<li><a href="#">Advertising Programs</a></li>
+				<li><a href="#">Business Solutions</a></li>
+				<li><a href="#">Privacy &amp; Terms</a></li>
+				<li><a href="#">+Google</a></li>
+				<li><a href="#">About Google</a></a></li>
 			</ul>
 		</div>
+		
 	</body>
 </html>

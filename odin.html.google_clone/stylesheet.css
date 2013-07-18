@@ -3,29 +3,40 @@ body {
 }
 
 #header {
-	position: fixed;
+	/* Background's not totally black (apparently).
+	Fixed position allows div to be forced to sit flush against	the
+	edges of the browser window. Is there a better way? I dunno */
 	background-color: #2d2d2d;
 	width: 100%;
 	height: 30px;
+	position: fixed;
 	left: 0;
 	top: 0;
 }
 
 #header ul {
-	margin: 2px 0px 0px 0px;
+	margin-top: 5px;
 	padding-left: 8px;
 }
 
 li {
-	display: inline-block;
-	list-style-type: none;
+	/* Notice this bit of CSS affects both the header and footer lists.
+	It's super effective. */
 	font-size: 13px;
 	padding: 5px 8px 5px 8px;
+	display: inline;
+	list-style-type: none;
 }
 
-#header ul li {
+#header ul li a {
 	font-weight: bold;
 	color: #BBBBBB;
+	text-decoration: none;
+}
+
+#header ul li a:hover {
+	color: white;
+	text-decoration: none;
 }
 
 #signin_button {
@@ -44,11 +55,8 @@ li {
 	padding: 7px 16px 8px 16px;
 }
 
-.center_piece {
-	/*
-	set alignment to be centered
-	set positioning?
-	*/
+#center_piece {
+	text-align: center;
 }
 
 #logo {
@@ -56,15 +64,18 @@ li {
 }
 
 #search_box {
-	margin: 8px 0px 8px 0px;
-}
-
-#search_box input {
+	/* An input HTML element defaults to display:inline, but we	need it
+	to appear on a new line. Hence, a rare appearance by display:block. */
+	display: block;
 	height: 24px;
 	width: 572px;
+	margin: 16px auto 8px auto;
 }
 
 .search_button {
+	/* FYI - "rgba" means Red Green Blue Alpha. Zero red/green/blue means
+	you're left with black, but the 0.1 alpha means 10% opacity, which
+	makes the end result grey rather than black. Whoa. */
 	font-size: 11px;
 	font-weight: bold;
 	padding: 8px;
@@ -84,10 +95,15 @@ li {
 
 #footer ul {
 	text-align: right;
-	margin: 0px 0px 0px 0px;
+	margin-top: 3px;
 	padding-right: 46px;
 }
 
-#footer ul li {
+#footer ul li a {
 	color: #666666;
+	text-decoration: none;
+}
+
+#footer ul li a:hover {
+	text-decoration: underline;
 }
