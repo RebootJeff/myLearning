@@ -17,25 +17,25 @@ still within the limit. This check does not need to be performed
 for multiples of 3 due to "i < max/3" in the for-loop condition.
 The second part of the if-statement checks if the multiple of 5
 is redudant to multiples of 3. For example, we don't want to add
-"15" to the answer as a multiple of 3 and a multiple of 5. It
-just needs to be added to the answer once, not twice.
+"15" to the sum as a multiple of 3 and a multiple of 5. It
+just needs to be added to the sum once, not twice.
 */
 
 var solution1 = function(input){
-    var answer = 0;
+    var sum = 0;
     for(var i = 1; i < input; i++){
         if(i % 3 === 0){
-            answer += i;
+            sum += i;
         }
         else if(i % 5 === 0){
-            answer += i;
+            sum += i;
         }
     }
-    return answer;
+    return sum;
 };
 
 var solution2 = function(input){
-    var answer = 0;
+    var sum = 0;
     var multipleOfThree;
     var multipleOfFive;
 
@@ -43,11 +43,11 @@ var solution2 = function(input){
         multipleOfThree = i*3;
         multipleOfFive = i*5;
         if(multipleOfFive < input && multipleOfFive % 3 > 0){
-            answer += multipleOfFive;    
+            sum += multipleOfFive;    
         }
-        answer += multipleOfThree;
+        sum += multipleOfThree;
     }
-    return answer;
+    return sum;
 };
 
 // Change the value of max. See what happens.
@@ -55,13 +55,13 @@ var solution2 = function(input){
 var input = 1000;
 
 var start = new Date().getTime();
-var answer1 = solution1(input);
+var answer = solution1(input);
 var end = new Date().getTime();
-console.log('Answer #1: ' + answer1);
+console.log('Answer #1: ' + answer);
 console.log('Runtime #1: ' + (end - start));
 
 start = new Date().getTime();
-var answer2 = solution2(input);
+answer = solution2(input);
 end = new Date().getTime();
-console.log('Answer #2: ' + answer2);
+console.log('Answer #2: ' + answer);
 console.log('Runtime #2: ' + (end - start));
