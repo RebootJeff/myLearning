@@ -1,12 +1,15 @@
-var input = 600851475143;
+// Problem 3 - Find the greatest prime factor as described here:
+// http://projecteuler.net/problem=3
+
+var input = 1000; // input should be 600851475143, but takes too long
 
 var isPrime = function(num){
 	var check = true;
 	// check if number is prime by dividing it by all possible numbers
-    for(var j = 2;j<i;j++){
-        if(i % j === 0 && isPrime){
+    for(var j = 2; j < num; j++){
+        if(num % j === 0 && check){
             check = false;
-            j = i + 1;	// cancel remaining iterations of for-loop
+            j = num;	// cancel remaining iterations of for-loop
         }
     }
     return check;	
