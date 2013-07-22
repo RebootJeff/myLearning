@@ -1,0 +1,18 @@
+.grid_square {
+	background-color: black;
+	float: left;
+	border: 1px solid white;
+}
+
+.grid_square_lit {
+	background-color: red;
+}
+
+.new_row {
+	clear: both;
+}
+
+body {
+	overflow: auto;
+	width: 960px;
+}
