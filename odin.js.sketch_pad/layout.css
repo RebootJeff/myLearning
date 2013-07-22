@@ -16,3 +16,8 @@ body {
 	overflow: auto;
 	width: 960px;
 }
+
+#start {
+	width: 100px;
+	height: 30px;
+}
