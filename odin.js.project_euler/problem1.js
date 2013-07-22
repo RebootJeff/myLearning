@@ -58,10 +58,10 @@ var start = new Date().getTime();
 var answer = solution1(input);
 var end = new Date().getTime();
 console.log('Answer #1: ' + answer);
-console.log('Runtime #1: ' + (end - start));
+console.log('Runtime #1: ' + (end - start) + 'ms');
 
 start = new Date().getTime();
 answer = solution2(input);
 end = new Date().getTime();
 console.log('Answer #2: ' + answer);
-console.log('Runtime #2: ' + (end - start));
+console.log('Runtime #2: ' + (end - start) + 'ms');
