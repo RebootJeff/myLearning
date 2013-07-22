@@ -3,7 +3,6 @@
 
 /*
 Expalanation:
-
 Solution 1 - Straightforward
 Solution 2 - Shorter loop
 The second solution creates multiples rather than searching for them,
