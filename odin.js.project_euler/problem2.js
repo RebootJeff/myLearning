@@ -17,7 +17,7 @@ Only 3 of them need to be stored at a time.
 var solution = function(limit){
     var sum = 0;
     var sequence = [];
-	sequence[1] = sequence[3] = 0;
+    sequence[1] = sequence[3] = 0;
     sequence[2] = 1;
     
     while(sequence[3] < limit){
