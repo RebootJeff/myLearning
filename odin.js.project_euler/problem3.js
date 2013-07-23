@@ -49,3 +49,15 @@ var start = new Date().getTime();
 console.log('Answer: ' + maxPrimeFactor(num));
 var end = new Date().getTime();
 console.log('Runtime: ' + (end - start) + 'ms');
+
+/*
+Notes...
+Largest Prime Factor of  60085: 157, Runtime: 2ms
+Largest Prime Factor of  600851: 20719, Runtime: 7ms
+Largest Prime Factor of  6008514: 58907, Runtime: 34ms
+Largest Prime Factor of  60085147: 1397329, Runtime: 308ms
+Largest Prime Factor of  600851475: 54499, Runtime: 3019ms (3.02sec)
+Largest Prime Factor of  6008514751: 3439333, Runtime: 197383ms (3.29min)
+Largest Prime Factor of  60085147514: 10976461, Runtime: 1967527ms (32.79min)
+Largest Prime Factor of  600851475143: 6857, Runtime: 19029808ms (5.29hrs)
+*/
