@@ -3,12 +3,12 @@
 
 var isPrime = function(input){
 	// check if number is prime by dividing it by all possible numbers
-    for(var i = 2; i < input; i++){
-        if(input % i === 0){
-            return false;
-        }
-    }
-    return true;
+	for(var i = 2; i < input; i++){
+		if(input % i === 0){
+			return false;
+		}
+	}
+	return true;
 };
 
 var maxPrime = function(input){
@@ -17,7 +17,7 @@ var maxPrime = function(input){
 	var i = input - 1;
 
 	while(i > 1 && !isPrime(i)){
-	    i--;
+		i--;
 	}
 	return i;
 };
@@ -25,10 +25,10 @@ var maxPrime = function(input){
 var maxPrimeFactor = function(input){
 	/*
 	Explanation:
-	Notice that we start with a big divisor and decrement it to find
+	This solution uses a brute force algorithm.
+	Notice that we start with a big divisor, and decrement it to find
 	the MAX prime factor. Also, the if statement doesn't bother running
-	the potentially slow isPrime() function when the divisor isn't a
-	factor of the input
+	the isPrime() function when the divisor isn't a	factor of the input.
 	*/
 	var divisor = input - 1;
 
