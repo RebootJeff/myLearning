@@ -27,8 +27,12 @@ var start = function(option){
 					}
 					break;
 				case 3:
-					// animate to 0% opacity over 200ms, then back to 100%
-					// opacity over 800ms when cursor leaves square
+					/*
+						Animate to 0% opacity over 200ms, then back to 100%
+						opacity over 800ms when cursor leaves square.
+						This "case 3" was added for fun. The Odin Project
+						does not ask you to do this option.
+					*/
 					$(this).fadeTo(100,0);
 					$(this).mouseleave(function(){
 						$(this).fadeTo(400,1);
