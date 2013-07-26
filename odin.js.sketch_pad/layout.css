@@ -1,3 +1,20 @@
+#button_container {
+	margin: auto;
+	width: 960px;
+	text-align: center;
+}
+
+button {
+	width: 150px;
+	height: 30px;
+}
+
+#grid_container {
+	overflow: auto;
+	width: 960px;
+	margin: auto;
+}
+
 .grid_square {
 	background-color: black;
 	float: left;
@@ -10,14 +27,4 @@
 
 .new_row {
 	clear: both;
-}
-
-body {
-	overflow: auto;
-	width: 960px;
-}
-
-button {
-	width: 150px;
-	height: 30px;
 }
