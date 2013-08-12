@@ -1,5 +1,0 @@
-This is a folder full of my solutions to CoderByte's easy challenges. Their "analyze your code" feature doesn't work, so you can't just look at my solutions by visiting my CoderByte profile.
-
-Some challenges are so incredibly easy that I didn't bother to save the code I wrote. For example, the Check Nums challenge is straightforward `if` statements.
-
-Some challenges were way harder than I would expect for an "easy" puzzle. Oftentimes, I could easily think of a general algorithm or psuedocode, but it took me awhile to finish the code because of my lack of JavaScript-specific expertise. I also didn't know **Regular Expressions** before visiting CoderByte, so I learned the basics of `RegExp`s via Google. If you're a noob, let me just tell you it really helps if you know that `/[A-Za-z]/.test(charToBeTested)` checks to see whether or not a given character is part of the alphabet.
