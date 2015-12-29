@@ -52,7 +52,7 @@ console.log('Runtime: ' + (end - start) + 'ms');
 
 /*
 Notes...
-Largest Prime Factor of  60085: 157, Runtime: 2ms
+Largest Prime Factor of  60085: 197, Runtime: 2ms
 Largest Prime Factor of  600851: 20719, Runtime: 7ms
 Largest Prime Factor of  6008514: 58907, Runtime: 34ms
 Largest Prime Factor of  60085147: 1397329, Runtime: 308ms
